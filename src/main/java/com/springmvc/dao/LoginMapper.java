@@ -5,5 +5,6 @@ import com.springmvc.entity.User;
 public interface LoginMapper {
 
 
-    public User findUser(User user);
+    User findUser(String username, String password);
+
 }

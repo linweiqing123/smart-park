@@ -12,8 +12,13 @@ public class LoginServiceImpl implements ILoginService {
     @Autowired
     private LoginMapper loginMapper;
 
-    @Override
+  /*  @Override
     public User findUser(User user) {
         return loginMapper.findUser(user);
+    }*/
+
+    @Override
+    public User findUser(String username, String password) {
+        return loginMapper.findUser(username,password);
     }
 }

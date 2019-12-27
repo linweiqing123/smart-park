@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 public class JSPController {
-    @RequestMapping("/login")
+  /*  @RequestMapping("/login")
     public String login(){
         return "login";
     }
-
-    @RequestMapping("/admin")
+*/
+  /*  @RequestMapping("/admin")
     public String admin(){
         return "admin";
-    }
+    }*/
 
     @RequestMapping("/bottomModel")
     public String bottomModel(){
