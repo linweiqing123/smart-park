@@ -56,7 +56,7 @@
         <div class="col-md-6 right">
             <div class="form-location">
                 <form class="form-horizontal"
-                      action="${pageContext.request.contextPath }/login"
+                      action="${pageContext.request.contextPath }/admin"
                       method="post" id="myform">
                     <div style="margin-left: 80px">
                         <font color="red"> <span id="message">${msg}</span>

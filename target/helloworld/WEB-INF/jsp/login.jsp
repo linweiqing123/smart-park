@@ -56,7 +56,7 @@
         <div class="col-md-6 right">
             <div class="form-location">
                 <form class="form-horizontal"
-                      action="${pageContext.request.contextPath }/login.action"
+                      action="${pageContext.request.contextPath }/admin"
                       method="post" id="myform">
                     <div style="margin-left: 80px">
                         <font color="red"> <span id="message">${msg}</span>
@@ -70,15 +70,15 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">密&nbsp;&nbsp;&nbsp;码:</label>
+                        <label for="inputPassword" class="col-sm-2 control-label">密&nbsp;&nbsp;&nbsp;码:</label>
                         <div class="col-sm-6">
                             <input type="password" class="form-control" id="inputPassword"
                                    name="password" placeholder="请输入密码" style="background-color:transparent">
                         </div>
                     </div>
-                  <%--  <!--验证码-->
+                    <!--验证码-->
                     <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">验证码:</label>
+                        <label for="inputPassword" class="col-sm-2 control-label">验证码:</label>
                         <div class="col-sm-4">
                             <input type="text" class="form-control" id="input" name="input"
                                    placeholder="区分大小写" style="background-color:transparent"><span class="test"></span>
@@ -89,7 +89,7 @@
                             </div>
                             <input type="button" class="refresh">
                         </div>
-                    </div>--%>
+                    </div>
 
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
