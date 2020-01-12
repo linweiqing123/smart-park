@@ -9,6 +9,6 @@ public class GetMsgController {
 
     @RequestMapping("/GetMsg")
     public String GetMsgController(){
-        return "GetApiMsg1";
+        return "GetApiMsgTest";
     }
 }

@@ -7,14 +7,14 @@ import java.net.URLConnection;
 import java.util.List;
 import java.util.Map;
 
-public class GetApiMsg2 {
-    public static void main(String[] args) {
+public class GetApiMsgTest {
+     public static void main(String[] args) {
 
-        //发送 GET 请求，第一个参数为url，第二个参数为请求参数
-        String s = GetApiMsg2.sendGet2("http://api.heclouds.com/devices/553157946/datastreams", "");
-        System.out.println(s);
+         //发送 GET 请求，第一个参数为url，第二个参数为请求参数
+         String s = GetApiMsgTest.sendGet1("http://api.heclouds.com/devices/553149658/datastreams", "");
+         System.out.println(s);
 
-    }
+     }
 
     /**
      * 向指定URL发送GET方法的请求
@@ -23,7 +23,7 @@ public class GetApiMsg2 {
      * @param param：请求参数，请求参数应该是 name1=value1&name2=value2&name3=value3 的形式。
      * @return String[result]：所代表远程资源的响应结果
      */
-    public static String sendGet2(String url, String param) {
+    public static String sendGet1(String url, String param) {
         String result = "";
         BufferedReader in = null;
         try {
@@ -38,7 +38,7 @@ public class GetApiMsg2 {
             connection.setRequestProperty("connection", "Keep-Alive");
             //connection.setRequestProperty("user-agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)");
             connection.setRequestProperty("content-type","application/json;charset=utf-8");   //设置返回格式
-            connection.setRequestProperty("api-key","zzNrFTV=f5hC9Zw6LqPChar1TGE=");   //设置api-key
+            connection.setRequestProperty("api-key","4M7DiU07qTEbRPuSz5oKHtQy=Dw=");   //设置api-key
             // 建立实际的连接
             connection.connect();
 
@@ -74,4 +74,5 @@ public class GetApiMsg2 {
         }
         return result;
     }
+
 }

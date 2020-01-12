@@ -12,14 +12,16 @@ import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
-public class HttpClientUtil {
+public class HttpClientUtil2 {
     @Test
-    public void doGetTestOne() {
+    public void doGet2() {
         // 获得Http客户端(可以理解为:你得先有一个浏览器;注意:实际上HttpClient与浏览器是不一样的)
         CloseableHttpClient httpClient = HttpClientBuilder.create().build();
         // 创建Get请求
-        HttpGet httpGet = new HttpGet("http://api.heclouds.com/devices/553149658/datastreams/car_flag");
-        httpGet.addHeader("api-key","4M7DiU07qTEbRPuSz5oKHtQy=Dw=");
+        HttpGet httpGet = new HttpGet("http://api.heclouds.com/devices/553157946/datastreams/car_flag");
+        httpGet.addHeader("accept", "*/*");
+        httpGet.addHeader("connection", "Keep-Alive");
+        httpGet.addHeader("api-key","zzNrFTV=f5hC9Zw6LqPChar1TGE=");
         httpGet.addHeader("Content-Type", "application/json;charset=utf-8");
         // 响应模型
         CloseableHttpResponse response = null;

@@ -7,23 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aebf7536-de70-4227-be42-11d07d449918" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/GetMsgController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsg1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsg2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/HttpClientUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/smart_park_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/smart_park_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/smart-park.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/smart-park.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/HttpClientUtil2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/AdminController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/JSPController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/GetMsgController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/GetMsgController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsg1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsgTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsg2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/HttpClientUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/HttpClientUtil1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/HttpClientUtil.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,7 +56,7 @@
         <counts>
           <entry key="class" value="1" />
           <entry key="css" value="1" />
-          <entry key="java" value="22" />
+          <entry key="java" value="25" />
           <entry key="js" value="6" />
           <entry key="jsp" value="6" />
           <entry key="png" value="2" />
@@ -80,7 +70,7 @@
           <entry key="CLASS" value="1" />
           <entry key="CSS" value="1" />
           <entry key="Image" value="2" />
-          <entry key="JAVA" value="22" />
+          <entry key="JAVA" value="25" />
           <entry key="JSP" value="6" />
           <entry key="JavaScript" value="6" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -90,18 +80,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="11" />
-          <entry key="java" value="767" />
+          <entry key="dummy" value="17" />
+          <entry key="java" value="804" />
           <entry key="jsp" value="44" />
-          <entry key="txt" value="12" />
+          <entry key="txt" value="31" />
           <entry key="xml" value="112" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="767" />
+          <entry key="JAVA" value="804" />
           <entry key="JSP" value="44" />
-          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="PLAIN_TEXT" value="48" />
           <entry key="XML" value="112" />
         </counts>
       </usages-collector>
@@ -109,11 +99,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/util/HttpClientUtil.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/util/HttpClientUtil1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+            <state relative-caret-position="468">
+              <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,10 +112,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsg1.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/util/HttpClientUtil2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="40" column="81" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="81" />
+            <state relative-caret-position="108">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsgTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,11 +138,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/GetMsgController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            <state relative-caret-position="180">
+              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#262#263#0" expanded="true" />
                 <element signature="e#297#298#0" expanded="true" />
               </folding>
             </state>
@@ -186,12 +187,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsg.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsg2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsg1.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/GetMsg.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/GetMsgController.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/HttpClientUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/HttpClientUtil2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsg1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsg2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsgTest.java" />
       </list>
     </option>
   </component>
@@ -238,7 +241,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="948" />
     <option name="y" value="1" />
     <option name="width" value="981" />
@@ -344,7 +347,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578806296216" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578807314196" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../停车场管理系统ssm框架/parking" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -373,20 +376,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HttpClientUtil.doGetTestOne">
-    <configuration name="GetApiMsg1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.springmvc.entity.GetApiMsg1" />
-      <module name="smart-park" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.springmvc.entity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.HttpClientUtil2.doGet2">
     <configuration name="GetApiMsg2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.springmvc.entity.GetApiMsg2" />
       <module name="smart-park" />
@@ -400,21 +390,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HttpClientUtil" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetApiMsgTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.springmvc.entity.GetApiMsgTest" />
       <module name="smart-park" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="util.*" />
+          <option name="PATTERN" value="com.springmvc.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="util" />
-      <option name="MAIN_CLASS_NAME" value="util.HttpClientUtil" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HttpClientUtil.doGetTestOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HttpClientUtil1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="smart-park" />
       <extension name="coverage">
         <pattern>
@@ -423,8 +412,38 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="util" />
-      <option name="MAIN_CLASS_NAME" value="util.HttpClientUtil" />
+      <option name="MAIN_CLASS_NAME" value="util.HttpClientUtil1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpClientUtil1.doGetTestOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smart-park" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="util" />
+      <option name="MAIN_CLASS_NAME" value="util.HttpClientUtil1" />
       <option name="METHOD_NAME" value="doGetTestOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpClientUtil2.doGet2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smart-park" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="util" />
+      <option name="MAIN_CLASS_NAME" value="util.HttpClientUtil2" />
+      <option name="METHOD_NAME" value="doGet2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -507,16 +526,18 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.smart_park" />
-      <item itemvalue="Application.GetApiMsg1" />
+      <item itemvalue="Application.GetApiMsgTest" />
       <item itemvalue="Application.GetApiMsg2" />
-      <item itemvalue="JUnit.HttpClientUtil.doGetTestOne" />
-      <item itemvalue="JUnit.HttpClientUtil" />
+      <item itemvalue="JUnit.HttpClientUtil1.doGetTestOne" />
+      <item itemvalue="JUnit.HttpClientUtil1" />
+      <item itemvalue="JUnit.HttpClientUtil2.doGet2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HttpClientUtil.doGetTestOne" />
-        <item itemvalue="JUnit.HttpClientUtil" />
-        <item itemvalue="Application.GetApiMsg1" />
+        <item itemvalue="JUnit.HttpClientUtil2.doGet2" />
+        <item itemvalue="JUnit.HttpClientUtil1.doGetTestOne" />
+        <item itemvalue="JUnit.HttpClientUtil1" />
+        <item itemvalue="Application.GetApiMsgTest" />
         <item itemvalue="Application.GetApiMsg2" />
       </list>
     </recent_temporary>
@@ -538,7 +559,7 @@
       <workItem from="1578108863937" duration="15928000" />
       <workItem from="1578196045483" duration="9965000" />
       <workItem from="1578491172476" duration="915000" />
-      <workItem from="1578793419407" duration="8471000" />
+      <workItem from="1578793419407" duration="9836000" />
     </task>
     <task id="LOCAL-00001" summary="登录跳转主页面">
       <created>1578151799045</created>
@@ -547,7 +568,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578151799045</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="httpclient工具类">
+      <created>1578806361835</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578806361835</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -569,12 +597,16 @@
     <history-entry file="HttpClientUtil_doGetTestOne - 2020.01.12 at 13h 16m 05s.xml">
       <configuration name="HttpClientUtil.doGetTestOne" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="HttpClientUtil2_doGet2 - 2020.01.12 at 13h 35m 18s.xml">
+      <configuration name="HttpClientUtil2.doGet2" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41038000" />
+    <option name="totallyTimeSpent" value="42403000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23282135" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -587,7 +619,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3505338" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.30427048" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -618,7 +650,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="登录跳转主页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="登录跳转主页面" />
+    <MESSAGE value="httpclient工具类" />
+    <option name="LAST_COMMIT_MESSAGE" value="httpclient工具类" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions">
@@ -850,10 +883,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsg2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/HttpClientUtil1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+        <state relative-caret-position="468">
+          <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -862,30 +895,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/GetMsgController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state relative-caret-position="180">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
             <element signature="e#297#298#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsg1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/HttpClientUtil2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="40" column="81" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="81" />
+        <state relative-caret-position="108">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/HttpClientUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsg2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+        <state relative-caret-position="143">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsgTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
