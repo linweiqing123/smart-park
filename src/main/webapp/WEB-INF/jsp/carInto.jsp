@@ -136,7 +136,7 @@
 
 
 </div>
-<c:import url="bottomModel.jsp"></c:import>
+<%--<c:import url="bottomModel.jsp"></c:import>--%>
 <script type="text/javascript">
     function orderInfo(sid) {
         $.ajax({

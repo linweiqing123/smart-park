@@ -104,7 +104,7 @@
         </div>
     </div>
 </div>
-<%@ include file="bottomModel.jsp" %>
+<%--<%@ include file="bottomModel.jsp" %>--%>
 <script src="../../js/login.js"></script>
 </body>
 </html>

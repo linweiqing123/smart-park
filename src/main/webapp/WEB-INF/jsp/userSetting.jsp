@@ -37,56 +37,57 @@
 <div class="container main">
     <div class="row">
         <div class="col-md-3 imglocation">
-            <div class="row">
+           <%-- <div class="row">
                 <img class="main-userImg" src="<%=userImg%>${USER_LOGIN.headImg}">
                 <div>
                     <input type="submit" value="更换头像" name="submit" class="btn"
                            data-toggle="modal" data-target="#imgModalInfo"/>
                 </div>
-            </div>
+            </div>--%>
         </div>
         <div class="user-info">
-            <div class="col-md-6">
+            <%--<div class="col-md-6">
                 <label class="left">工号：</label> <label class="right">${USER_LOGIN.code}</label>
             </div>
             <div class="col-md-6 info-margin">
                 <label class="left">昵称：</label> <label class="right">${USER_LOGIN.name}</label>
-            </div>
+            </div>--%>
             <div class="col-md-6 info-margin">
-                <label class="left">帐号：</label> <label class="right">${USER_LOGIN.username}</label>
+                <label class="left">帐号：</label> <label class="right">${username}</label>
             </div>
-            <div class="col-md-6 info-margin">
+          <%-- <div class="col-md-6 info-margin">
                 <label class="left">邮箱：</label> <label class="right">${USER_LOGIN.email}</label>
             </div>
             <div class="col-md-6 info-margin">
-                <label class="left">电话：</label> <label class="right">${USER_LOGIN.phone}</label>
+                <label class="left">电话：</label> <label class="right">${phone}</label>
             </div>
-            <div class="col-md-6 info-margin">
+     <div class="col-md-6 info-margin">
                 <label class="left">权限：</label>
                 <c:choose>
-                    <c:when test="${USER_LOGIN.type eq 0}">
-                        <label class="right">员工</label>
-                    </c:when>
-                    <c:when test="${USER_LOGIN.type eq 1}">
-                        <label class="right">管理员</label>
-                    </c:when>
-                </c:choose>
-            </div>
+            <c:when test="${USER_LOGIN.type eq 0}">
+                <label class="right">员工</label>
+            </c:when>
+            <c:when test="${USER_LOGIN.type eq 1}">
+                <label class="right">管理员</label>
+            </c:when>
+        </c:choose>
         </div>
+        </div>--%>
     </div>
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-8 info-margin">
-            <label class="left">签名：</label>
-            <div class="right text">${USER_LOGIN.say}</div>
-            <input type="submit" value="编辑信息" name="submit" class="btn1"
-                   data-toggle="modal" data-target="#myModalInfo"> <input
+           <%-- <label class="left">签名：</label>
+            <div class="right text">${USER_LOGIN.say}</div>--%>
+           <%-- <input type="submit" value="编辑信息" name="submit" class="btn1"
+                   data-toggle="modal" data-target="#myModalInfo">--%>
+               <input
                 type="submit" value="修改密码" name="submit" class="btn1"
                 data-toggle="modal" data-target="#myModalPassword">
         </div>
     </div>
 </div>
-<c:import url="bottomModel.jsp"></c:import>
+<%--<c:import url="bottomModel.jsp"></c:import>--%>
 <!--updloadimg Modal -->
 <script type="text/javascript">
     function getObjectURL(file) {

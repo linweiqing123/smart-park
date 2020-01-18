@@ -38,13 +38,13 @@
         <div class="col-md-12 column">
             <div class="welcome">
                 <h2><%--${USER_LOGIN.name},--%>欢迎您使用停车场收费系统!</h2>
-                <p>${USER_LOGIN.say}</p>
-                <p id="system">
+                <p> 拥有车库：1个&emsp;&emsp;&emsp;拥有车位：2个</p>
+              <%--  <p id="system">
 						<span class="label label-primary" onclick="systemState()"><a
                                 style="color: white">刷新</a></span><br> 当前停车：<span class="redColor">${s.pn}辆</span>&emsp;&emsp;空余车位：<span
                         class="greenColor">${s.np}个</span><br>
-                    拥有车库：${s.k}个&emsp;&emsp;&emsp;拥有车位：${s.all}个
-                </p>
+                    拥有车库：1个&emsp;&emsp;&emsp;拥有车位：2个
+                </p>--%>
             </div>
         </div>
     </div>
@@ -90,17 +90,6 @@
     </div>
 </div>
 
-<!--天气信息展示模块-->
-<%--<div class="container three">
-    <iframe name="weather_inc"
-            src="https://i.tianqi.com/index.php?c=code&id=2&icon=5&py=xinxiang&temp=1&num=5&site=12"
-            style="border: solid 1px #7ec8ea" style="border-radius: 10px;" width="700" height="70" frameborder="0"
-            marginwidth="0" marginheight="0" scrolling="no"></iframe>
-</div>--%>
-<!--公告信息展示模块-->
-<%--<div class="container" style="text-align: center">
-    <h4 style="border-radius: 10px;background: #71b3f7;color:white">公告</h4>
-</div>--%>
 <c:forEach items="${ml}" var="m" varStatus="id">
     <c:if test="${id.count mod 2 == 0}">
         <div class="container four" style="margin-bottom: 30px;">
@@ -125,7 +114,7 @@
         </div>
     </c:if>
 </c:forEach>
-<c:import url="bottomModel.jsp"></c:import>
+<%--<c:import url="bottomModel.jsp"></c:import>--%>
 <script type="text/javascript">
     function systemState() {
         $.ajax({
@@ -552,7 +541,7 @@
 </div>
 
 <!--orc模态框-->
-<div class="modal fade" id="myModalOCR" tabindex="-1" role="dialog"
+<%--<div class="modal fade" id="myModalOCR" tabindex="-1" role="dialog"
      aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content" style="width:700px">
@@ -589,14 +578,14 @@
 
         </div>
     </div>
-</div>
-<script type="text/javascript">
+</div>--%>
+<%--<script type="text/javascript">
     function flush() {
         window.location.reload();
     }
 
     function clickOut() {
-        window.location.href = "<%=basePath%>carInto.action";
+        window.location.href = "<%=basePath%>carInto";
     }
 
     function clickCamera() {
@@ -686,8 +675,8 @@
             }
         })
     }
-</script>
-<script type="text/javascript" src="<%=basePath%>js/OCRcarNumber.js"></script>
+</script>--%>
+<%--<script type="text/javascript" src="<%=basePath%>js/OCRcarNumber.js"></script>--%>
 </body>
 </html>
 

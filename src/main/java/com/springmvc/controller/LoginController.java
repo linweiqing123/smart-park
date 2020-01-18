@@ -39,4 +39,8 @@ public class LoginController {
         //HTMLUtils.writeJosn(response,json.toString());
         return "admin";
     }
+    @RequestMapping("/logout")
+    public String logout(){
+        return "login";
+    }
 }
