@@ -28,23 +28,11 @@
             <div class="collapse navbar-collapse"
                  id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav" style="padding: 10px">
-                    <li><a href="<%=basePath%>admin.action">首页</a></li>
+                    <li><a href="<%=basePath%>admin">首页</a></li>
                    <%-- <c:if test="${USER_LOGIN.type eq 1}">
                         <li class="dropdown"><a href="<%=basePath%>employee.action"
                                                 class="dropdown-toggle">人员管理</a></li>
                     </c:if>--%>
-                   <%-- <c:if test="${USER_LOGIN.type eq 1}">
-                        <li class="dropdown"><a
-                                href="<%=basePath%>carstationList.action"
-                                class="dropdown-toggle">车库管理</a></li>
-                    </c:if>--%>
-                 <%--   <c:if test="${USER_LOGIN.type eq 1}">
-                        <li class="dropdown"><a
-                                href="<%=basePath%>message.action"
-                                class="dropdown-toggle">发布公告</a></li>
-                    </c:if>--%>
-                    <%--<li class="dropdown"><a href="<%=basePath%>today.action"
-                                            class="dropdown-toggle">今日工作</a></li>--%>
                 </ul>
                 <ul class="nav navbar-nav navbar-right" style="padding: 6px">
                     <%--<li><a><img

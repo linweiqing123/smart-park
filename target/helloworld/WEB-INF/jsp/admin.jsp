@@ -119,7 +119,7 @@
     function systemState() {
         $.ajax({
             async: false,
-            url: "${pageContext.request.contextPath}/systemState.action",
+            //url: "${pageContext.request.contextPath}/systemState.action",
             data: {},
             type: "POST",
             success: function (data) {
@@ -134,6 +134,9 @@
                 alert("error");
             }
         })
+    }
+    function clickOut() {
+        window.location.href='carInto';
     }
 
     function search() {
