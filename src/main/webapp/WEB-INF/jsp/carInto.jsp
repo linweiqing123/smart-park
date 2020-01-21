@@ -17,11 +17,16 @@
     <link
             href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
             rel="stylesheet">
-
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="<%=basePath%>js/jquery.validate.min.js"
             type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="<%=basePath%>css/icon.css">
+    <link rel="stylesheet" type="text/css" href="<%=basePath%>css/color.css">
+    <script type="text/javascript" src="<%=basePath%>js/jquery.min.js"></script>
+    <script type="text/javascript" src="<%=basePath%>js/jquery.easyui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/easyui.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script
             src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -60,7 +65,8 @@
         <tr align='center' height="22">
             <td width="25%"  align="right">入场时间：</td>
             <td width="75%"  align="left">
-                <input name="rushijian" size="20" class="easyui-datetimebox"  data-options="required:true,editable:false "/>
+            <input name="rushijian" size="20" class="easyui-datetimebox"
+                   data-options="required:true,editable:false" />
         </tr>
         <tr align='center' height="22">
             <td width="25%"  align="right">车辆车型：</td>
