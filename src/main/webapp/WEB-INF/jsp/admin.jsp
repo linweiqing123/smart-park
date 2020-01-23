@@ -39,12 +39,6 @@
             <div class="welcome">
                 <h2><%--${USER_LOGIN.name},--%>欢迎您使用停车场收费系统!</h2>
                 <p> 拥有车库：1个&emsp;&emsp;&emsp;拥有车位：2个</p>
-              <%--  <p id="system">
-						<span class="label label-primary" onclick="systemState()"><a
-                                style="color: white">刷新</a></span><br> 当前停车：<span class="redColor">${s.pn}辆</span>&emsp;&emsp;空余车位：<span
-                        class="greenColor">${s.np}个</span><br>
-                    拥有车库：1个&emsp;&emsp;&emsp;拥有车位：2个
-                </p>--%>
             </div>
         </div>
     </div>
@@ -57,7 +51,7 @@
             <div class="col-md-1 column"></div>
             <!--进入模块-->
             <div class="col-md-3 column" style="background: #f40;"
-                 onclick="clickOut()">
+                 onclick="carInto()">
                 <img src="images/logo-one.png">
                 <h2>车辆入库</h2>
                 <p>录入车辆信息，分配停车位置</p>
@@ -68,7 +62,7 @@
 
             <!--出去模块-->
             <div class="col-md-3 column" style="background: #00B51D"
-                 onclick="parkCar()">
+                 onclick="carOut()">
                 <img src="images/logo-two.png">
                 <h2>车辆出库</h2>
                 <p>车辆出库，计算停车费用</p>
@@ -90,7 +84,7 @@
     </div>
 </div>
 
-<c:forEach items="${ml}" var="m" varStatus="id">
+<%--<c:forEach items="${ml}" var="m" varStatus="id">
     <c:if test="${id.count mod 2 == 0}">
         <div class="container four" style="margin-bottom: 30px;">
             <div style="text-align: center;">
@@ -113,31 +107,19 @@
                 ${m.content}
         </div>
     </c:if>
-</c:forEach>
+</c:forEach>--%>
 <%--<c:import url="bottomModel.jsp"></c:import>--%>
 <script type="text/javascript">
-    function systemState() {
-        $.ajax({
-            async: false,
-            //url: "${pageContext.request.contextPath}/systemState.action",
-            data: {},
-            type: "POST",
-            success: function (data) {
-                console.log(data);
-                var h = "<p id='system'><span class='label label-primary' onclick='systemState()'>刷新</span><br>当前停车：<span class='redColor'>" + data.pn + "辆</span>&emsp;&emsp;空余车位：<span class='greenColor'>" + data.np + "个</span><br>拥有车库：" + data.k + "个&emsp;&emsp;&emsp;拥有车位：" + data.all + "个</p>";
-                $("#system").html(h);
-            },
-            fail: function (e) {
-                alert("error");
-            },
-            error: function (e) {
-                alert("error");
-            }
-        })
+
+    function carInto() {
+        window.location.href='/CarController/CarInto';
     }
-    function clickOut() {
-        window.location.href='carInto';
+
+  /*  function carOut() {
+        window.location.href='/CarController/CarOut';
     }
+*/
+
 
     function search() {
         $("#myModalSearch").modal('show');
@@ -199,7 +181,7 @@
         })
     }
 
-    function parkCar() {
+   function carOut() {
         $("#myModalCarOut").modal('show');
         var mycars = new Array("京", "津", "沪", "渝", "冀", "豫", "云", "辽", "黑",
             "湘", "皖", "鲁", "新", "苏", "浙", "赣", "鄂", "桂", "甘", "晋", "蒙",
@@ -585,10 +567,6 @@
 <%--<script type="text/javascript">
     function flush() {
         window.location.reload();
-    }
-
-    function clickOut() {
-        window.location.href = "<%=basePath%>carInto";
     }
 
     function clickCamera() {

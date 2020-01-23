@@ -11,6 +11,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <base href="<%=basePath%>">
     <meta name="viewport" content="width=device-width, initial-scale=0">
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <!-- 新 Bootstrap 核心 CSS 文件 -->
@@ -19,20 +20,20 @@
             rel="stylesheet">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script src="<%=basePath%>js/jquery.validate.min.js"
+    <script src="js/jquery.validate.min.js"
             type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="<%=basePath%>css/icon.css">
-    <link rel="stylesheet" type="text/css" href="<%=basePath%>css/color.css">
-    <script type="text/javascript" src="<%=basePath%>js/jquery.min.js"></script>
-    <script type="text/javascript" src="<%=basePath%>js/jquery.easyui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/color.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easyui.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/easyui.css">
     <link rel="stylesheet" type="text/css" href="css/demo.css">
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script
             src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="<%=basePath%>css/carInto.css"
+    <link rel="stylesheet" href="css/carInto.css"
           type="text/css">
-    <title>寻找车位</title>
+    <title>车辆入库</title>
     <style type="text/css">
         .orderParkInfo {
             margin-left: 30px;
@@ -56,7 +57,7 @@
 <!--导航栏开始-->
 <c:import url="navbarModel.jsp"></c:import>
 <!--主体信息开始-->
-<form  style="display:block;margin-top:80px" action="CarAction/CarInfoAdd.do" name="formAdd" method="post">
+<form  style="display:block;margin-top:80px" action="CarController/CarInfoAdd" name="formAdd" method="post">
     <table width="40%" border="0" cellpadding="2" cellspacing="1"
             align="center" style="margin-top: 8px">
         <tr >
@@ -68,21 +69,21 @@
             <input name="rushijian" size="20" class="easyui-datetimebox"
                    data-options="required:true,editable:false" />
         </tr>
-        <tr align='center' height="22">
-            <td width="25%"  align="right">车辆车型：</td>
+        <%--<tr align='center' height="22">
+            <td width="25%"  align="right">停车卡号：</td>
             <td width="75%"  align="left"><input
-                    type="text" name="chexing" size="20" /></td>
+                    type="text" name="kahao" size="20" /></td>--%>
         </tr>
         <tr align='center' height="22">
             <td width="25%"  align="right">车牌号：</td>
             <td width="75%"  align="left"><input
                     required="true" type="text" name="chehao" size="20" /></td>
         </tr>
-        <tr align='center' height="22">
+<%--        <tr align='center' height="22">
             <td width="25%"  align="right">车位：</td>
             <td width="75%"  align="left"><input
                     required="true" type="text" name="kahao" size="20" /></td>
-        </tr>
+        </tr>--%>
         <tr align='center' height="22">
             <td width="25%"  align="right">备注信息：</td>
             <td width="75%"  align="left"><input
