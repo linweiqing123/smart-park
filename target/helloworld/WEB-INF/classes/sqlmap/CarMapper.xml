@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springmvc.dao.CarMapper">
+
+	<insert id="doCreate" parameterType="com.springmvc.entity.CarInfo">
+		insert into car
+		(rushijian,chehao,beizhu,chushijian,feiyong)VALUES(#{rushijian,jdbcType=VARCHAR},#{chehao,jdbcType=VARCHAR},#{beizhu,jdbcType=VARCHAR},#{chushijian,jdbcType=VARCHAR},#{feiyong})
+	</insert>
+
+	<update id="updata" parameterType="com.springmvc.entity.CarInfo">
+		update car set
+		chushijian=#{chushijian},feiyong=#{feiyong} where id=#{id}
+	</update>
+
+	<select id="findAll" parameterType="com.springmvc.entity.CarInfo"
+		resultType="com.springmvc.entity.CarInfo">
+		SELECT * FROM car where feiyong = 0
+	</select>
+
+	<select id="findNum" parameterType="com.springmvc.entity.CarInfo"
+		resultType="java.lang.Integer">
+		SELECT count(*) FROM car where feiyong != 0
+	</select>
+
+	<select id="find" parameterType="com.springmvc.entity.CarInfo"
+		resultType="com.springmvc.entity.CarInfo">
+		SELECT * FROM car where feiyong != 0
+	</select>
+
+	<delete id="del" parameterType="java.lang.Integer">
+		delete from car where id = #{id}
+	</delete>
+
+	<!--<select id="search" parameterType="com.springmvc.entity.CarInfo"
+		resultType="com.njxzc.pojo.CarInfo">
+		SELECT * FROM car
+		<where>
+			1=1
+			<if test="chehao != null and chehao != ''">
+				and chehao = #{chehao}
+			</if>
+			<if test="kahao != null and kahao != ''">
+				and kahao = #{kahao}
+			</if>
+			
+		</where>
+	</select>-->
+	
+	<select id="findById" parameterType="java.lang.Integer"
+		resultType="com.springmvc.entity.CarInfo">
+		SELECT * FROM car where id = #{id}
+	</select>
+	
+	<select id="searchchu" parameterType="com.springmvc.entity.CarInfo"
+		resultType="com.springmvc.entity.CarInfo">
+		SELECT * FROM car
+		<where>
+			1=1
+			<if test="chehao != null and chehao != ''">
+				and chehao = #{chehao} 
+			</if>
+			<if test="kahao != null and kahao != ''">
+				and kahao = #{kahao} 
+			</if>
+				and feiyong = 0
+			
+		</where>
+	</select>
+</mapper>
+	
