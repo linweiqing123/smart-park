@@ -496,7 +496,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="carpace" class="col-sm-3 control-label">车位名</label>
+                        <label for="carspace" class="col-sm-3 control-label">车位名</label>
                         <div class="col-sm-3">
                             <input type="text" class="form-control" id="carspacename"
                                    placeholder="输入车位名" name="carspacename"/>

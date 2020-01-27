@@ -38,14 +38,14 @@ public class CarController {
         carService.doCreate(carInfo);
         List<CarInfo> list = new ArrayList<CarInfo>();
         list = carService.findAll();
+        int num = 2;
+        num = num - list.size();
         if (list != null) {
-            int num = 100;
-            num = num - list.size();
             mv.addObject("num", num);
             mv.setViewName("rusuccess");
-        } else {
-        mv.addObject("msg", "你输入的停车卡号不存在，请重新输入");
-        mv.setViewName("msg");
+        }if(num<0) {
+            mv.addObject("msg", "车位已满");
+            mv.setViewName("msg");
         }
         return mv;
     }

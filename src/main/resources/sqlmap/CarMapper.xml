@@ -31,21 +31,6 @@
 		delete from car where id = #{id}
 	</delete>
 
-	<!--<select id="search" parameterType="com.springmvc.entity.CarInfo"
-		resultType="com.njxzc.pojo.CarInfo">
-		SELECT * FROM car
-		<where>
-			1=1
-			<if test="chehao != null and chehao != ''">
-				and chehao = #{chehao}
-			</if>
-			<if test="kahao != null and kahao != ''">
-				and kahao = #{kahao}
-			</if>
-			
-		</where>
-	</select>-->
-	
 	<select id="findById" parameterType="java.lang.Integer"
 		resultType="com.springmvc.entity.CarInfo">
 		SELECT * FROM car where id = #{id}
@@ -59,9 +44,9 @@
 			<if test="chehao != null and chehao != ''">
 				and chehao = #{chehao} 
 			</if>
-			<if test="kahao != null and kahao != ''">
-				and kahao = #{kahao} 
-			</if>
+		<!--	<if test="kahao != null and kahao != ''">
+				and kahao = #{kahao}
+			</if>-->
 				and feiyong = 0
 			
 		</where>

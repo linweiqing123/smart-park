@@ -52,6 +52,16 @@
             color: #f40;
         }
     </style>
+    <script type="text/javascript">
+        function check() {
+                if (document.formAdd.chehao.value == "") {
+                    alert("请输入车牌号");
+                    return false;
+                }
+                document.formAdd.submit();
+        }
+
+    </script>
 </head>
 <body background="images/6.jpg"  width="100%" height="100%">
 <!--导航栏开始-->
@@ -69,21 +79,12 @@
             <input name="rushijian" size="20" class="easyui-datetimebox"
                    data-options="required:true,editable:false" />
         </tr>
-        <%--<tr align='center' height="22">
-            <td width="25%"  align="right">停车卡号：</td>
-            <td width="75%"  align="left"><input
-                    type="text" name="kahao" size="20" /></td>--%>
         </tr>
         <tr align='center' height="22">
             <td width="25%"  align="right">车牌号：</td>
             <td width="75%"  align="left"><input
                     required="true" type="text" name="chehao" size="20" /></td>
         </tr>
-<%--        <tr align='center' height="22">
-            <td width="25%"  align="right">车位：</td>
-            <td width="75%"  align="left"><input
-                    required="true" type="text" name="kahao" size="20" /></td>
-        </tr>--%>
         <tr align='center' height="22">
             <td width="25%"  align="right">备注信息：</td>
             <td width="75%"  align="left"><input
