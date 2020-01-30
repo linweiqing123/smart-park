@@ -38,7 +38,7 @@
         <div class="col-md-12 column">
             <div class="welcome">
                 <h2><%--${USER_LOGIN.name},--%>欢迎您使用停车场收费系统!</h2>
-                <p> 拥有车库：1个&emsp;&emsp;&emsp;拥有车位：2个</p>
+                <p> 拥有车库：1个&emsp;&emsp;&emsp;拥有车位：30个</p>
             </div>
         </div>
     </div>
@@ -84,41 +84,16 @@
     </div>
 </div>
 
-<%--<c:forEach items="${ml}" var="m" varStatus="id">
-    <c:if test="${id.count mod 2 == 0}">
-        <div class="container four" style="margin-bottom: 30px;">
-            <div style="text-align: center;">
-                <h4 class="message-title" style="font-weight: bold;">${m.title}<span
-                        class="timeAndName">&emsp;&emsp;${m.user.name}&emsp;&emsp;</span><span
-                        class="timeAndName"><fmt:formatDate value="${m.creatTime}" pattern="yyyy-MM-dd HH-mm"/></span>
-                </h4>
-            </div>
-                ${m.content}
-        </div>
-    </c:if>
-    <c:if test="${id.count mod 2 != 0}">
-        <div class="container five">
-            <div style="text-align: center;">
-                <h4 class="message-title" style="font-weight: bold;">${m.title}<span
-                        class="timeAndName">&emsp;&emsp;${m.user.name}&emsp;&emsp;</span><span
-                        class="timeAndName"><fmt:formatDate value="${m.creatTime}" pattern="yyyy-MM-dd HH-mm"/></span>
-                </h4>
-            </div>
-                ${m.content}
-        </div>
-    </c:if>
-</c:forEach>--%>
-<%--<c:import url="bottomModel.jsp"></c:import>--%>
 <script type="text/javascript">
 
     function carInto() {
         window.location.href='/CarController/CarInto';
     }
 
-  /*  function carOut() {
+    function carOut() {
         window.location.href='/CarController/CarOut';
     }
-*/
+
 
 
     function search() {
@@ -181,7 +156,7 @@
         })
     }
 
-   function carOut() {
+ /*  function carOut() {
         $("#myModalCarOut").modal('show');
         var mycars = new Array("京", "津", "沪", "渝", "冀", "豫", "云", "辽", "黑",
             "湘", "皖", "鲁", "新", "苏", "浙", "赣", "鄂", "桂", "甘", "晋", "蒙",
@@ -191,15 +166,15 @@
                 "<option value='" + mycars[i] + "'>" + mycars[i]
                 + "</option>");
         }
-    }
+    }*/
 
-    $.validator
+   /* $.validator
         .addMethod(
             "checkCarNumber",
             function (value, element) {
                 var mobile = /^(([A-Z](([0-9]{5}[DF])|([DF]([A-HJ-NP-Z0-9])[0-9]{4})))|([A-Z][A-HJ-NP-Z0-9]{4}[A-HJ-NP-Z0-9挂学警港澳使领]))$/;
                 return this.optional(element) || mobile.test(value);
-            }, "请正确填写车牌号码");
+            }, "请正确填写车牌号码");*/
     $(function () {
         $("#searchInfo")
             .validate(
@@ -207,7 +182,7 @@
                     rules: {
                         "car_numtwo": {
                             "required": true,
-                            "checkCarNumber": true
+                           // "checkCarNumber": true
                         }
                     },
                     messages: {

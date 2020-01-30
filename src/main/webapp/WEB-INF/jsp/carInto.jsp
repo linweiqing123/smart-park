@@ -31,8 +31,7 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script
             src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/carInto.css"
-          type="text/css">
+    <link rel="stylesheet" href="css/carInto.css" type="text/css">
     <title>车辆入库</title>
     <style type="text/css">
         .orderParkInfo {

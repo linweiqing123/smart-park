@@ -22,5 +22,13 @@
 <body>
 	成功入场！<br>
 	剩余车位数量：${num}(个)
+	<div> </div>
+	<a href="javascript:void(0)" class="easyui-linkbutton c6"
+	   onclick="fanhui()" >返回首页</a>
 </body>
+<script type="text/javascript">
+    function fanhui() {
+        window.location.href="admin";
+    }
+</script>
 </html>
