@@ -35,6 +35,17 @@
 		resultType="com.springmvc.entity.CarInfo">
 		SELECT * FROM car where id = #{id}
 	</select>
+
+	<select id="search" parameterType="com.springmvc.entity.CarInfo"
+			resultType="com.springmvc.entity.CarInfo">
+		SELECT * FROM car
+		<where>
+			1=1
+			<if test="chehao != null and chehao != ''">
+				and chehao = #{chehao}
+			</if>
+		</where>
+	</select>
 	
 	<select id="searchchu" parameterType="com.springmvc.entity.CarInfo"
 		resultType="com.springmvc.entity.CarInfo">
@@ -44,9 +55,6 @@
 			<if test="chehao != null and chehao != ''">
 				and chehao = #{chehao} 
 			</if>
-		<!--	<if test="kahao != null and kahao != ''">
-				and kahao = #{kahao}
-			</if>-->
 				and feiyong = 0
 			
 		</where>

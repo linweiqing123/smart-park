@@ -38,7 +38,7 @@
         <div class="col-md-12 column">
             <div class="welcome">
                 <h2><%--${USER_LOGIN.name},--%>欢迎您使用停车场收费系统!</h2>
-                <p> 拥有车库：1个&emsp;&emsp;&emsp;拥有车位：30个</p>
+                <p> 拥有车库：1个&emsp;&emsp;&emsp;拥有车位：8个</p>
             </div>
         </div>
     </div>
