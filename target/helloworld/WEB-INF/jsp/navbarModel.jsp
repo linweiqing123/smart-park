@@ -29,10 +29,7 @@
                  id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav" style="padding: 10px">
                     <li><a href="<%=basePath%>admin">首页</a></li>
-                   <%-- <c:if test="${USER_LOGIN.type eq 1}">
-                        <li class="dropdown"><a href="<%=basePath%>employee.action"
-                                                class="dropdown-toggle">人员管理</a></li>
-                    </c:if>--%>
+                    <li><a href="<%=basePath%>CarController/Record">停车记录</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right" style="padding: 6px">
                     <%--<li><a><img

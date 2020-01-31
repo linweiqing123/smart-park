@@ -1,5 +1,6 @@
 package com.springmvc.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.springmvc.entity.CarInfo;
 import com.springmvc.service.ICarService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +35,11 @@ public class CarController {
         return "carOut";
     }
 
+    @RequestMapping("/Record")
+    public String RecordController(){
+        return "tingchejilu";
+    }
+
     // 车辆入场
     @RequestMapping("/CarInfoAdd")
     public ModelAndView CarInfoAdd(CarInfo carInfo, HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -42,7 +48,7 @@ public class CarController {
         carService.doCreate(carInfo);
         List<CarInfo> list = new ArrayList<CarInfo>();
         list = carService.findAll();
-        num = 30;
+        num = 8;
         num = num - list.size();
         if (list != null) {
             mv.addObject("num", num);
@@ -138,4 +144,33 @@ public class CarController {
         }
         return mv;
     }
+
+    // 查询所有已出场车辆信息
+    @RequestMapping("/CarInfoFind")
+    public void CarInfoFind(String value, String name,HttpServletRequest request,
+                            HttpServletResponse response) throws IOException {
+        List<CarInfo> list = new ArrayList<CarInfo>();
+        CarInfo carInfo = new CarInfo();
+        if ("chehao".equals(name)) {
+            carInfo.setChehao(value);
+            list = carService.search(carInfo);
+        }else {
+            list = carService.find();
+        }
+
+        request.getSession().setAttribute("list", list);
+        String jsonStr = JSONUtils.writeValueAsString(list);
+        HTMLUtils.writeJosn(response, jsonStr);
+    }
+
+    // 删除车辆信息
+    @RequestMapping("/CarInfoDel")
+    public void CarInfoDel(int id, HttpServletResponse response)
+            throws IOException {
+        carService.del(id);
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("success", "成功");
+        HTMLUtils.writeJosn(response, jsonObject.toString());
+    }
+
 }
