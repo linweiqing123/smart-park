@@ -79,7 +79,7 @@ public class CarController {
 
     // 根据停车时间进行车辆计费
     @RequestMapping("/CarInfoUpdate")
-    public ModelAndView CarInfoUpdate(int id, String rushijian, HttpServletRequest request, HttpServletResponse response) throws Exception {
+    public ModelAndView CarInfoUpdate(int id, String rushijian) throws Exception {
         ModelAndView mv = new ModelAndView();
         String chushijian = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss")
                 .format(new Date()); // 自动获取当前时间做为出场时间

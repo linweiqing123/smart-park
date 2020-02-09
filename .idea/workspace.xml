@@ -7,15 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aebf7536-de70-4227-be42-11d07d449918" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/images/messager_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/images/panel_tools.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/helloworld/WEB-INF/jsp/tingchejilu.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/helloworld/css/images/messager_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/helloworld/css/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/service/SpaceMsgService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/service/impl/SpaceMsgServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cheweixinxi.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/GetMsgController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/SpaceMsgController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/entity/CarDate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsgTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsgTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/service/GetCarDateService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/service/impl/GetCarDateServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generator.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sqlmap/CarMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sqlmap/CarMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/helloworld/WEB-INF/classes/sqlmap/CarMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld/WEB-INF/classes/sqlmap/CarMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springmvc/controller/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springmvc/controller/CarController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springmvc/controller/GetMsgController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springmvc/entity/GetApiMsgTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springmvc/entity/GetApiMsgTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generator.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/helloworld/WEB-INF/classes/com/springmvc/controller/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld/WEB-INF/classes/com/springmvc/controller/CarController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/helloworld/WEB-INF/classes/com/springmvc/controller/GetMsgController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/helloworld/WEB-INF/classes/com/springmvc/entity/GetApiMsgTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld/WEB-INF/classes/com/springmvc/entity/GetApiMsgTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/helloworld/WEB-INF/jsp/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld/WEB-INF/jsp/admin.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,46 +58,59 @@
     <session id="1423956769">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="258" />
-          <entry key="jsp" value="362" />
-          <entry key="txt" value="57" />
-          <entry key="xml" value="17" />
+          <entry key="dummy" value="5" />
+          <entry key="java" value="790" />
+          <entry key="jsp" value="529" />
+          <entry key="properties" value="13" />
+          <entry key="txt" value="60" />
+          <entry key="xml" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="258" />
-          <entry key="JSP" value="362" />
-          <entry key="PLAIN_TEXT" value="57" />
-          <entry key="XML" value="17" />
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="1" />
+          <entry key="JAVA" value="790" />
+          <entry key="JSP" value="527" />
+          <entry key="PLAIN_TEXT" value="65" />
+          <entry key="Properties" value="13" />
+          <entry key="SQL" value="2" />
+          <entry key="XML" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="2" />
-          <entry key="java" value="11" />
+          <entry key="class" value="3" />
+          <entry key="fxml" value="1" />
+          <entry key="java" value="45" />
           <entry key="js" value="2" />
-          <entry key="jsp" value="21" />
-          <entry key="xml" value="1" />
+          <entry key="jsp" value="28" />
+          <entry key="properties" value="2" />
+          <entry key="xml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="11" />
-          <entry key="JSP" value="21" />
+          <entry key="CLASS" value="3" />
+          <entry key="JAVA" value="45" />
+          <entry key="JSP" value="28" />
           <entry key="JavaScript" value="2" />
-          <entry key="XML" value="1" />
+          <entry key="Properties" value="2" />
+          <entry key="XML" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.33" value="1" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.33" value="2" />
           <entry key="project.open.time.35" value="1" />
-          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.39" value="2" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
     </session>
@@ -92,38 +118,59 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/tingchejilu.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/CarController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-334">
-              <caret line="65" column="54" lean-forward="true" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
+            <state relative-caret-position="255">
+              <caret line="157" column="37" lean-forward="true" selection-start-line="157" selection-start-column="37" selection-end-line="157" selection-end-column="37" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#4928#4937#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/feiyong.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cheweixinxi.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="34" column="8" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="43" />
+            <state relative-caret-position="-298">
+              <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/SpaceMsgController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#863#873#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/carInto.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/sqlmap/SpacemsgMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="70" column="40" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="40" />
+            <state relative-caret-position="288">
+              <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
               <folding>
-                <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#insert#1;n#mapper#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/dao/SpacemsgMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,68 +179,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/sqlmap/CarMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+            <state relative-caret-position="296">
+              <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/CarController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/entity/Spacemsg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4946#4955#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="198">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="e#17#23#0" expanded="true" />
-                <element signature="e#23#29#0" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="e#18#24#0" expanded="true" />
-                <element signature="e#24#30#0" expanded="true" />
-                <element signature="e#46#52#0" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#106#112#0" expanded="true" />
-                <element signature="e#112#118#0" expanded="true" />
-                <element signature="e#118#124#0" expanded="true" />
-                <element signature="e#223#229#0" expanded="true" />
-                <element signature="e#229#235#0" expanded="true" />
-                <element signature="e#235#241#0" expanded="true" />
-                <element signature="e#309#315#0" expanded="true" />
-                <element signature="e#315#321#0" expanded="true" />
-                <element signature="e#321#327#0" expanded="true" />
-                <element signature="e#394#400#0" expanded="true" />
-                <element signature="e#400#406#0" expanded="true" />
-                <element signature="e#406#412#0" expanded="true" />
-                <element signature="n#style#0;n#strong#11;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="206">
+              <caret line="97" column="36" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/carOut.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/navbarModel.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="55" column="40" lean-forward="true" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="252">
+              <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -204,14 +218,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>servlet.x</find>
       <find>dis</find>
       <find>nav</find>
       <find>png</find>
@@ -229,15 +243,19 @@
       <find>toolbar</find>
       <find>color</find>
       <find>systemState</find>
-      <find>search</find>
       <find>myModalCarOut</find>
-      <find>myModalLabel</find>
       <find>njxzc</find>
       <find>check</find>
       <find>dosea</find>
       <find>getSelected</find>
       <find>submit</find>
       <find>formAdd</find>
+      <find>costInfo</find>
+      <find>searchcaspace</find>
+      <find>car_numtwo</find>
+      <find>search</find>
+      <find>myModalLabel</find>
+      <find>myModalSearch</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -250,21 +268,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/dao/LoginMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/../停车场管理系统ssm框架/parking/src/com/njxzc/util/JSONUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/JSONUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsg.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/GetMsg.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/HttpClientUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/HttpClientUtil2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsg1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsg2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsgTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/entity/ApiMsg.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/GetMsgController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/service/GetMsgService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/service/impl/GetMsgServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/HttpClientUtil1.java" />
@@ -299,8 +304,21 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/navbarModel.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/sqlmap/CarMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/tingchejilu.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/CarController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/generator.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/sqlmap/SpaceMsgMapper.xml.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/sqlmap/SpaceMsgMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/dao/SpaceMsgMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/dao/SpacemsgMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/service/SpaceMsgService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/sqlmap/SpacemsgMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/service/impl/SpaceMsgServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/GetMsgController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsgTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cheweixinxi.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/CarController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/SpaceMsgController.java" />
       </list>
     </option>
   </component>
@@ -343,13 +361,18 @@
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
           <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="abc" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="948" />
-    <option name="y" value="-12" />
+    <option name="x" value="306" />
     <option name="width" value="981" />
     <option name="height" value="1032" />
   </component>
@@ -359,9 +382,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -403,6 +426,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="springmvc" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="abc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smart-park" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="abc" type="b2602c69:ProjectViewProjectNode" />
@@ -453,14 +485,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="abc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smart-park" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="sqlmap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -476,51 +500,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="abc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smart-park" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="abc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smart-park" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="abc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smart-park" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="abc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smart-park" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="abc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smart-park" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="abc" type="b2602c69:ProjectViewProjectNode" />
@@ -541,7 +521,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580471038989" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580992464787" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/springmvc/entity" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -575,6 +555,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.smart_park">
+    <configuration name="GetApiMsgTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.springmvc.entity.GetApiMsgTest" />
+      <module name="smart-park" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springmvc.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HttpClientUtil1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="util.HttpClientUtil1" />
       <module name="smart-park" />
@@ -584,6 +577,20 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetApiMsgTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smart-park" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springmvc.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.springmvc.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.springmvc.entity.GetApiMsgTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -618,40 +625,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HttpClientUtil1.doGetTestOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="smart-park" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="util" />
-      <option name="MAIN_CLASS_NAME" value="util.HttpClientUtil1" />
-      <option name="METHOD_NAME" value="doGetTestOne" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HttpClientUtil2.doGet2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="smart-park" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="util" />
-      <option name="MAIN_CLASS_NAME" value="util.HttpClientUtil2" />
-      <option name="METHOD_NAME" value="doGet2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="smart_park" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.47" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8090/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=utf-8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
@@ -665,8 +640,6 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_abc" />
-        <option name="HTTP_PORT" value="8090" />
-        <option name="JNDI_PORT" value="1090" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -731,18 +704,18 @@
     <list>
       <item itemvalue="Tomcat Server.smart_park" />
       <item itemvalue="Application.HttpClientUtil1" />
-      <item itemvalue="JUnit.HttpClientUtil1.doGetTestOne" />
+      <item itemvalue="Application.GetApiMsgTest" />
       <item itemvalue="JUnit.HttpClientUtil1" />
-      <item itemvalue="JUnit.HttpClientUtil2.doGet2" />
       <item itemvalue="JUnit.HttpClientUtil1.doGet1" />
+      <item itemvalue="JUnit.GetApiMsgTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GetApiMsgTest" />
+        <item itemvalue="JUnit.GetApiMsgTest" />
         <item itemvalue="Application.HttpClientUtil1" />
         <item itemvalue="JUnit.HttpClientUtil1.doGet1" />
         <item itemvalue="JUnit.HttpClientUtil1" />
-        <item itemvalue="JUnit.HttpClientUtil2.doGet2" />
-        <item itemvalue="JUnit.HttpClientUtil1.doGetTestOne" />
       </list>
     </recent_temporary>
   </component>
@@ -774,7 +747,13 @@
       <workItem from="1580109833050" duration="9467000" />
       <workItem from="1580214022437" duration="220000" />
       <workItem from="1580215044482" duration="13852000" />
-      <workItem from="1580359009433" duration="11078000" />
+      <workItem from="1580359009433" duration="11159000" />
+      <workItem from="1580726500652" duration="16102000" />
+      <workItem from="1580901769670" duration="232000" />
+      <workItem from="1580902036020" duration="2423000" />
+      <workItem from="1580969551279" duration="850000" />
+      <workItem from="1580979045816" duration="6201000" />
+      <workItem from="1580994685280" duration="5830000" />
     </task>
     <task id="LOCAL-00001" summary="登录跳转主页面">
       <created>1578151799045</created>
@@ -832,7 +811,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580471034628</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="页面">
+      <created>1580474151054</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1580474151054</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -860,15 +846,29 @@
     <history-entry file="HttpClientUtil1_doGet1 - 2020.01.12 at 14h 34m 47s.xml">
       <configuration name="HttpClientUtil1.doGet1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GetApiMsgTest - 2020.02.04 at 16h 35m 37s.xml">
+      <configuration name="GetApiMsgTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GetApiMsgTest - 2020.02.04 at 16h 35m 53s.xml">
+      <configuration name="GetApiMsgTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124372000" />
+    <option name="totallyTimeSpent" value="156091000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2821342" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26515764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -878,11 +878,11 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.34163702" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2580071" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4430605" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3291815" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32851985" />
@@ -901,10 +901,10 @@
       <window_info anchor="right" id="Ant Build" order="6" weight="0.24962178" />
       <window_info anchor="right" id="Maven" order="7" weight="0.32980332" />
       <window_info anchor="right" id="Database" order="8" weight="0.32980332" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32902184" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.12691997" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24333064" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2489895" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -914,11 +914,11 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.29715303" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3291815" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.36476868" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3291815" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32851985" />
@@ -926,7 +926,7 @@
       <window_info anchor="bottom" id="Application Servers" order="11" weight="0.3291815" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.33096084" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.3291815" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
@@ -954,94 +954,30 @@
     <MESSAGE value="入场成功" />
     <MESSAGE value="出库成功" />
     <MESSAGE value="停车记录" />
-    <option name="LAST_COMMIT_MESSAGE" value="停车记录" />
+    <MESSAGE value="页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="页面" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/SpaceMsgController.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/easyui.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/color.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/icon.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.easyui.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/carInto.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/userSetting.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/umeditor/umeditor.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-526">
-          <caret line="203" column="132" selection-start-line="203" selection-start-column="132" selection-end-line="203" selection-end-column="132" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/color.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="80" column="11" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/dao/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/dao/LoginMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/entity/Kahao.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/service/KaohaoService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/entity/MemberInfo.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.4/mybatis-3.2.4.jar!/org/apache/ibatis/builder/BaseBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="102" selection-start-line="102" selection-end-line="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sqlmap/LoginMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/GetMsgController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1066,31 +1002,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/service/GetCarDateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/service/impl/LoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/dao/CarMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1130,20 +1045,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/util/HTMLUtils.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/service/impl/CarServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/util/Util.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="674">
           <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1180,20 +1085,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/entity/CarDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/msg.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
           <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#font#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1211,30 +1106,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/navbarModel.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/carOut.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/service/ICarService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/feiyong.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="34" column="8" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="990">
+          <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1242,81 +1117,202 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="70" column="40" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sqlmap/CarMapper.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/javax/servlet/http/HttpServlet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+        <state relative-caret-position="1167">
+          <caret line="271" selection-start-line="271" selection-end-line="271" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/carOut.jsp">
+    <entry file="jar://D:/Java/jdk1.8.0_231/src.zip!/java/net/URL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="55" column="40" lean-forward="true" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="50">
+          <caret line="609" selection-start-line="609" selection-end-line="609" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_231/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="497" column="32" selection-start-line="497" selection-start-column="32" selection-end-line="497" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/tingchejilu.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-334">
-          <caret line="65" column="54" lean-forward="true" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
+        <state relative-caret-position="18">
+          <caret line="65" column="54" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/HttpClientUtil1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/feiyong.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/service/ICarService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sqlmap/SpaceMsgMapper.xml.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generator.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/service/impl/GetCarDateServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/service/GetCarDateService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/service/SpaceMsgService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sqlmap/LoginMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/entity/CarDate.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/dao/CarMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/service/impl/CarServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/service/impl/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsgTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-258">
+          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="97" column="36" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/navbarModel.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sqlmap/CarMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sqlmap/SpacemsgMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#insert#1;n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/entity/Spacemsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/dao/SpacemsgMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cheweixinxi.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-298">
+          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/service/impl/SpaceMsgServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/CarController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
+        <state relative-caret-position="255">
+          <caret line="157" column="37" lean-forward="true" selection-start-line="157" selection-start-column="37" selection-end-line="157" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4946#4955#0" expanded="true" />
+            <element signature="e#4928#4937#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/SpaceMsgController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
+        <state relative-caret-position="468">
+          <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="e#17#23#0" expanded="true" />
-            <element signature="e#23#29#0" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="e#18#24#0" expanded="true" />
-            <element signature="e#24#30#0" expanded="true" />
-            <element signature="e#46#52#0" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#106#112#0" expanded="true" />
-            <element signature="e#112#118#0" expanded="true" />
-            <element signature="e#118#124#0" expanded="true" />
-            <element signature="e#223#229#0" expanded="true" />
-            <element signature="e#229#235#0" expanded="true" />
-            <element signature="e#235#241#0" expanded="true" />
-            <element signature="e#309#315#0" expanded="true" />
-            <element signature="e#315#321#0" expanded="true" />
-            <element signature="e#321#327#0" expanded="true" />
-            <element signature="e#394#400#0" expanded="true" />
-            <element signature="e#400#406#0" expanded="true" />
-            <element signature="e#406#412#0" expanded="true" />
-            <element signature="n#style#0;n#strong#11;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#863#873#0" expanded="true" />
           </folding>
         </state>
       </provider>

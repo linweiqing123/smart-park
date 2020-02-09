@@ -38,7 +38,7 @@
         <div class="col-md-12 column">
             <div class="welcome">
                 <h2><%--${USER_LOGIN.name},--%>欢迎您使用停车场收费系统!</h2>
-                <p> 拥有车库：1个&emsp;&emsp;&emsp;拥有车位：30个</p>
+                <p> 拥有车库：1个&emsp;&emsp;&emsp;拥有车位：8个</p>
             </div>
         </div>
     </div>
@@ -71,7 +71,7 @@
             <div class="col-md-1 column"></div>
 
             <!--车位查询模块-->
-            <form action="<%=basePath%>carInto.action">
+            <form action="<%=basePath%>GetMsg">
                 <div class="col-md-3 column" style="background: #30A080"
                      onclick="search()">
                     <img src="images/logo-three.png">
@@ -94,21 +94,11 @@
         window.location.href='/CarController/CarOut';
     }
 
-
-
     function search() {
-        $("#myModalSearch").modal('show');
-        var mycars = new Array("京", "津", "沪", "渝", "冀", "豫", "云", "辽", "黑",
-            "湘", "皖", "鲁", "新", "苏", "浙", "赣", "鄂", "桂", "甘", "晋", "蒙",
-            "陕", "吉", "闽", "贵", "粤", "青", "藏", "川", "宁", "琼", "使", "领");
-        for (var i = 0; i < mycars.length; i++) {
-            $("#selectIdtwo").append(
-                "<option value='" + mycars[i] + "'>" + mycars[i]
-                + "</option>");
-        }
+        window.location.href='/SpaceMsg'
     }
 
-    function searchcaspace() {
+   /* function searchcaspace() {
         var v = $("#carspacename").val();
         if (v == "" || v == " " || v == null) {
             $("#error").html("<p style='color:red;margin-left:150px'>车位名不能为空</p>");
@@ -118,30 +108,26 @@
         }
         $.ajax({
             async: false,
-            url: "${pageContext.request.contextPath}/searchcaspace.action",
+            url: "http://api.heclouds.com/devices/553149658/datastreams/car_flag",
             data: {
-                "carspacename": $("#carspacename").val()
+                /!*"carspacename": $("#carspacename").val()*!/
             },
-            type: "POST",
+            type: "GET",
+            dataType: 'jsonp',  // 请求方式为jsonp
+            jsonpCallback: "onBack",
             success: function (data) {
-                if (data.s_name != null) {
-                    var state, type;
-                    if (data.s_state == 1) {
+                if (errno==0) {
+                    var state;
+                    if (data.current_value == 1) {
                         state = "有车";
                     } else {
                         state = "无车";
                     }
-                    if (data.s_type == 1) {
-                        type = "小车位";
-                    } else {
-                        type = "大车位";
-                    }
-                    var la = "<p>所属车库：" + data.carstation.c_name
-                        + "<br>" + "车位名称：" + data.s_name
-                        + "&emsp;&emsp;车位类型：" + type + "<br>"
-                        + "车位价格：" + data.s_price + "元/"
-                        + data.s_pricetime + "小时<br>" + "目前状态："
-                        + state + "</p>";
+                    var la = "<p>创建时间：" + data.create_time
+                        + "<br>" + "更新时间：" + data.update_at
+                        + "&emsp;&emsp;" + "<br>"
+                        + "id：" + data.id
+                        + "有无空位：" + data.current_value + "<br>"  + "</p>";
                     $("#spaceInfo").html(la);
                 } else {
                     $("#spaceInfo").html("<p style='color:red'>没有查询到该车位</p>");
@@ -154,282 +140,10 @@
                 alert("error");
             }
         })
-    }
-
- /*  function carOut() {
-        $("#myModalCarOut").modal('show');
-        var mycars = new Array("京", "津", "沪", "渝", "冀", "豫", "云", "辽", "黑",
-            "湘", "皖", "鲁", "新", "苏", "浙", "赣", "鄂", "桂", "甘", "晋", "蒙",
-            "陕", "吉", "闽", "贵", "粤", "青", "藏", "川", "宁", "琼", "使", "领");
-        for (var i = 0; i < mycars.length; i++) {
-            $("#selectId").append(
-                "<option value='" + mycars[i] + "'>" + mycars[i]
-                + "</option>");
-        }
     }*/
 
-   /* $.validator
-        .addMethod(
-            "checkCarNumber",
-            function (value, element) {
-                var mobile = /^(([A-Z](([0-9]{5}[DF])|([DF]([A-HJ-NP-Z0-9])[0-9]{4})))|([A-Z][A-HJ-NP-Z0-9]{4}[A-HJ-NP-Z0-9挂学警港澳使领]))$/;
-                return this.optional(element) || mobile.test(value);
-            }, "请正确填写车牌号码");*/
-    $(function () {
-        $("#searchInfo")
-            .validate(
-                {
-                    rules: {
-                        "car_numtwo": {
-                            "required": true,
-                           // "checkCarNumber": true
-                        }
-                    },
-                    messages: {
-                        "car_numtwo": {
-                            "required": "车牌号不能为空",
-                            "checkCarNumber": "请输入正确的车牌号码"
-                        }
-                    },
-                    submitHandler: function (form) {
-                        $.ajax({
-                            async: false,
-                            url: "${pageContext.request.contextPath}/searchcarnumber.action",
-                            data: {
-                                "carNumber": $("#car_numtwo").val(),
-                                "selectId": $("#selectIdtwo").val()
-                            },
-                            type: "POST",
-                            success: function (data) {
-                                var co = data.co;
-                                if (co == null) {
-                                    $("#orderInfo").html("<p style='color:red'>没有搜索到车辆信息</p>");
-                                    return;
-                                }
-                                if (co.state == 1) {
-                                    $("#orderInfo").html("<p style='color:red'>没有搜索到车辆信息</p>");
-                                    return;
-                                }
-                                var cs = data.cs;
-                                var la = "<p>车牌号："
-                                    + co.province
-                                    + "·"
-                                    + co.carNumber
-                                    + "<br>"
-                                    + "停车人姓名："
-                                    + co.customerName
-                                    + "&emsp;&emsp;停车人电话："
-                                    + co.customerPhone
-                                    + "<br>"
-                                    + "目前在："
-                                    + cs.carstation.c_name
-                                    + "车库&emsp;"
-                                    + cs.s_name + "车位"
-                                    + "</p>";
-                                $("#orderInfo").html(la);
-                            },
-                            fail: function (e) {
-                                alert("请求失败");
-                            },
-                            error: function (e) {
-                                alert("error");
-                            }
-                        })
-                    }
-                })
-    })
-    $(function () {
-        $("#costInfo")
-            .validate(
-                {
-                    rules: {
-                        "car_num": {
-                            "required": true,
-                            "checkCarNumber": true
-                        }
-                    },
-                    messages: {
-                        "car_num": {
-                            "required": "车牌号不能为空",
-                            "checkCarNumber": "请输入正确的车牌号码"
-                        }
-                    },
-                    submitHandler: function (form) {
-                        $
-                            .ajax({
-                                async: false,
-                                url: "${pageContext.request.contextPath}/selectCarorder.action",
-                                data: {
-                                    "selectId": $("#selectId")
-                                        .val(),
-                                    "car_num": $("#car_num")
-                                        .val()
-                                },
-                                type: "POST",
-                                success: function (data) {
-                                    if (data.co != null) {
-                                        console.log(data.user);
-                                        var co = data.co;
-                                        var c = data.carspace;
-                                        var u = data.user;
-                                        var type;
-                                        if (c.s_type == 1) {
-                                            type = "小车位";
-                                        } else {
-                                            type = "大车位";
-                                        }
-                                        var la = "<div id='oid' style='display:none;'>"
-                                            + co.id
-                                            + "</div>"
-                                            + "<strong>车牌号：</strong><em>"
-                                            + co.province
-                                            + "·"
-                                            + co.carNumber
-                                            + "</em><br>"
-                                            + "<strong>车库：</strong><em>"
-                                            + c.carstation.c_name
-                                            + "</em>&emsp;&emsp;&emsp;<strong>车位：</strong><em>"
-                                            + c.s_name
-                                            + "</em><br>"
-                                            + "<strong>车位类型:</strong><em>"
-                                            + type
-                                            + "</em><br>"
-                                            + "<strong>入库时间:</strong><em>"
-                                            + data.startTime
-                                            + "</em>&emsp;&emsp;&emsp;<strong>出库时间:</strong><em>"
-                                            + data.endTime
-                                            + "</em><br>"
-                                            + "<strong>价格：</strong><em>"
-                                            + c.s_price
-                                            + "元/"
-                                            + c.s_pricetime
-                                            + "小时</em>&emsp;&emsp;&emsp;<strong>停车时间：</strong><em>"
-                                            + data.time
-                                            + "小时</em><br>"
-                                            + "<strong>操作人:</strong><em>"
-                                            + u.name
-                                            + "</em>&emsp;&emsp;&emsp;<strong>工号：</strong><em>"
-                                            + u.code
-                                            + "</em><br>"
-                                            + "<strong>总计:</strong><strong style='color:red'>￥"
-                                            + data.cost
-                                            + "元</strong><br><br>"
-                                            + "<span onclick='account(+"
-                                            + co.id
-                                            + ","
-                                            + c.s_id
-                                            + ","
-                                            + data.time
-                                            + ","
-                                            + data.oneEndTime
-                                            + ","
-                                            + data.cost
-                                            + ")' class='endBtn'>结算</span>"
-                                        $("#carCost").html(la);
-                                        alert("计算费用成功！");
-                                    } else {
-                                        alert("没有查找到该车牌号！");
-                                    }
-                                },
-                                fail: function (e) {
-                                    alert("没有查找到该车牌号！");
-                                },
-                                error: function (e) {
-                                    alert("error！");
-                                }
-                            })
-                    }
-
-                })
-    })
-
-    function account(oid, sid, time, endTime, cost) {
-        $.ajax({
-            async: false,
-            url: "${pageContext.request.contextPath}/endCarorder.action",
-            data: {
-                "oid": oid,
-                "sid": sid,
-                "time": time,
-                "endTime": endTime,
-                "cost": cost
-            },
-            type: "POST",
-            success: function (data) {
-                if (data == "OK") {
-                    alert("结算成功！");
-                    $("#myModalCarOut").modal('hide');
-                } else {
-                    alert("结算失败！");
-                }
-            },
-            fail: function (e) {
-                alert("error");
-            },
-            error: function (e) {
-                alert("error");
-            }
-        })
-
-    }
 </script>
-<!--计算停车费用模态框-->
-<div class="modal fade" id="myModalCarOut" tabindex="-1" role="dialog"
-     aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"
-                        aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title" id="myModalLabel">计算停车费用</h4>
-            </div>
-            <div class="modal-body">
-                <form class="form-horizontal" id="costInfo">
-                    <p id="carspaceInfo"></p>
-                    <div class="form-group">
-                        <label for="car_num" class="col-sm-3 control-label">车牌号</label>
-                        <div class="col-sm-2">
-                            <select class="form-control sel" id="selectId" name="selectId">
-                            </select>
-                        </div>
-                        <div class="col-sm-4">
-                            <input type="text" class="form-control" id="car_num"
-                                   placeholder="输入车牌号码" name="car_num"/>
-                        </div>
-                        <div class="col-sm-2">
-                            <span class="OCRcarnumber" onclick="clickCamera()">拍照识别</span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="panel panel-success"
-                             style="width: 450px; margin-left: 80px">
-                            <div class="panel-heading">
-                                <p id="carCost" style="line-height: 25px">
-                                    <strong>车牌号：</strong><em>&emsp;&emsp;</em><br>
-                                    <strong>车库：</strong><em>&emsp;&emsp;</em>&emsp;&emsp;&emsp;<strong>车位：</strong><em>&emsp;&emsp;</em><br>
-                                    <strong>车位类型:</strong><em>&emsp;&emsp;</em><br> <strong>入库时间:</strong><em>&emsp;&emsp;</em>&emsp;&emsp;&emsp;<strong>出库时间:</strong><em>&emsp;&emsp;</em><br>
-                                    <strong>价格：</strong><em>&emsp;&emsp;</em>&emsp;&emsp;&emsp;<strong>停车时间：</strong><em>&emsp;&emsp;</em><br>
-                                    <strong>操作人:</strong><em>&emsp;&emsp;</em>&emsp;&emsp;&emsp;<strong>工号：</strong><em>&emsp;&emsp;</em><br>
-                                    <strong>总计:</strong><strong style="color: red">&emsp;&emsp;</strong><br>
-                                    <br> <span class="endBtn">结算</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default"
-                                data-dismiss="modal" onclick="flush()">关闭
-                        </button>
-                        <button type="submit" class="btn btn-primary" id="parkcar">计算费用</button>
-                    </div>
-                </form>
-            </div>
 
-        </div>
-    </div>
-</div>
 <!--搜索模态框-->
 <div class="modal fade" id="myModalSearch" tabindex="-1" role="dialog"
      aria-labelledby="myModalLabel">
@@ -446,22 +160,6 @@
                 <form class="form-horizontal" id="searchInfo">
                     <p id="carspaceInfo"></p>
                     <div class="form-group">
-                        <label for="car_num" class="col-sm-3 control-label">车牌号</label>
-                        <div class="col-sm-2">
-                            <select class="form-control sel" id="selectIdtwo"
-                                    name="selectId">
-                            </select>
-                        </div>
-                        <div class="col-sm-4">
-                            <input type="text" class="form-control" id="car_numtwo"
-                                   placeholder="输入车牌号码" name="car_numtwo"/>
-                        </div>
-                        <button class="col-sm-2"
-                                style="display: block; padding: 0; background: #f40; width: 40px; text-align: center; border-radius: 5px; color: white; margin-top: 5px;">
-                            搜索
-                        </button>
-                    </div>
-                    <div class="form-group">
                         <div class="panel panel-success"
                              style="display: block; width: 450px; margin-left: 80px">
                             <div class="panel-heading">
@@ -471,7 +169,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="carspace" class="col-sm-3 control-label">车位名</label>
+                        <label for="carspacename" class="col-sm-3 control-label">车位名</label>
                         <div class="col-sm-3">
                             <input type="text" class="form-control" id="carspacename"
                                    placeholder="输入车位名" name="carspacename"/>
@@ -500,139 +198,6 @@
     </div>
 </div>
 
-<!--orc模态框-->
-<%--<div class="modal fade" id="myModalOCR" tabindex="-1" role="dialog"
-     aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" style="width:700px">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"
-                        aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title" id="myModalLabel">拍照识别</h4>
-            </div>
-            <div class="modal-body">
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <div class="col-sm-4">
-                            <video id="video" width="300" height="200" controls></video>
-                        </div>
-                        <div class="col-sm-2"></div>
-                        <div class="col-sm-4">
-                            <canvas id="canvas" width="300" height="200"
-                                    style="padding:3px;border:1px dashed #f40;"></canvas>
-                        </div>
-                    </div>
-
-                </form>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default"
-                            data-dismiss="modal" onclick="flush()">关闭
-                    </button>
-                    <button class="col-sm-2 OCRcarnumber" id="capture">拍照</button>
-                    <button class="col-sm-2 OCRcarnumber" style="background: #f40" onclick="goGetCarNumber()">识别并计算费用
-                    </button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>--%>
-<%--<script type="text/javascript">
-    function flush() {
-        window.location.reload();
-    }
-
-    function clickCamera() {
-        $("#myModalCarOut").modal("hide");
-        $("#myModalOCR").modal("show");
-    }
-
-    function goGetCarNumber() {
-        var img = convertCanvasToImage();
-        $.ajax({
-            async: false,
-            url: "${pageContext.request.contextPath}/OCRNumber.action",
-            data: {
-                "Base64Image": img
-            },
-            type: "POST",
-            success: function (data) {
-                if (data.co == null) {
-                    alert("请重新拍照识别！");
-                    return;
-                }
-                $("#myModalOCR").modal("hide");
-                $("#myModalCarOut").modal("show");
-                var co = data.co;
-                var c = data.carspace;
-                var u = data.user;
-                var type;
-                if (c.s_type == 1) {
-                    type = "小车位";
-                } else {
-                    type = "大车位";
-                }
-                var la = "<div id='oid' style='display:none;'>"
-                    + co.id
-                    + "</div>"
-                    + "<strong>车牌号：</strong><em>"
-                    + co.province
-                    + "·"
-                    + co.carNumber
-                    + "</em><br>"
-                    + "<strong>车库：</strong><em>"
-                    + c.carstation.c_name
-                    + "</em>&emsp;&emsp;&emsp;<strong>车位：</strong><em>"
-                    + c.s_name
-                    + "</em><br>"
-                    + "<strong>车位类型:</strong><em>"
-                    + type
-                    + "</em><br>"
-                    + "<strong>入库时间:</strong><em>"
-                    + data.startTime
-                    + "</em>&emsp;&emsp;&emsp;<strong>出库时间:</strong><em>"
-                    + data.endTime
-                    + "</em><br>"
-                    + "<strong>价格：</strong><em>"
-                    + c.s_price
-                    + "元/"
-                    + c.s_pricetime
-                    + "小时</em>&emsp;&emsp;&emsp;<strong>停车时间：</strong><em>"
-                    + data.time
-                    + "小时</em><br>"
-                    + "<strong>操作人:</strong><em>"
-                    + u.name
-                    + "</em>&emsp;&emsp;&emsp;<strong>工号：</strong><em>"
-                    + u.code
-                    + "</em><br>"
-                    + "<strong>总计:</strong><strong style='color:red'>￥"
-                    + data.cost
-                    + "元</strong><br><br>"
-                    + "<span onclick='account(+"
-                    + co.id
-                    + ","
-                    + c.s_id
-                    + ","
-                    + data.time
-                    + ","
-                    + data.oneEndTime
-                    + ","
-                    + data.cost
-                    + ")' class='endBtn'>结算</span>"
-                $("#carCost").html(la);
-            },
-            fail: function (e) {
-                alert("error");
-            },
-            error: function (e) {
-                alert("error");
-            }
-        })
-    }
-</script>--%>
-<%--<script type="text/javascript" src="<%=basePath%>js/OCRcarNumber.js"></script>--%>
 </body>
 </html>
 

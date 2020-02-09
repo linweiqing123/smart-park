@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.springmvc.dao.SpacemsgMapper" >
+  <resultMap id="BaseResultMap" type="com.springmvc.entity.Spacemsg" >
+    <result column="update_at" property="updateAt" jdbcType="TIMESTAMP" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="current_value" property="currentValue" jdbcType="INTEGER" />
+  </resultMap>
+  <insert id="insert" parameterType="com.springmvc.entity.Spacemsg" >
+    insert into spacemsg (update_at, create_time, current_value
+      )
+    values (#{updateAt,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP}, #{currentValue,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.springmvc.entity.Spacemsg" >
+    insert into spacemsg
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="updateAt != null" >
+        update_at,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="currentValue != null" >
+        current_value,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="updateAt != null" >
+        #{updateAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="currentValue != null" >
+        #{currentValue,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="find" parameterType="com.springmvc.entity.Spacemsg" resultType="com.springmvc.entity.Spacemsg">
+    select * from spaceMsg
+  </select>
+</mapper>

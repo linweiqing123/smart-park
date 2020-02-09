@@ -1,5 +1,7 @@
 package com.springmvc.entity;
 
+import net.sf.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
@@ -11,7 +13,7 @@ public class GetApiMsgTest {
      public static void main(String[] args) {
 
          //发送 GET 请求，第一个参数为url，第二个参数为请求参数
-         String s = GetApiMsgTest.sendGet1("http://api.heclouds.com/devices/553149658/datastreams", "");
+         String s = GetApiMsgTest.sendGet1("http://api.heclouds.com/devices/553149658/datastreams/car_flag", "");
          System.out.println(s);
 
      }
@@ -74,5 +76,4 @@ public class GetApiMsgTest {
         }
         return result;
     }
-
 }
