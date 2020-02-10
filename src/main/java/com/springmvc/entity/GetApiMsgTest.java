@@ -1,6 +1,6 @@
 package com.springmvc.entity;
-
 import net.sf.json.JSONObject;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -10,13 +10,14 @@ import java.util.List;
 import java.util.Map;
 
 public class GetApiMsgTest {
-     public static void main(String[] args) {
+    @RequestMapping("/GetMsg")
+    public static void test(String[] args) {
 
-         //发送 GET 请求，第一个参数为url，第二个参数为请求参数
-         String s = GetApiMsgTest.sendGet1("http://api.heclouds.com/devices/553149658/datastreams/car_flag", "");
-         System.out.println(s);
+        //发送 GET 请求，第一个参数为url，第二个参数为请求参数
+        String s = GetApiMsgTest.sendGet1("http://api.heclouds.com/devices/553157946/datastreams/car_flag", "");
+        System.out.println(s);
 
-     }
+    }
 
     /**
      * 向指定URL发送GET方法的请求
@@ -39,8 +40,8 @@ public class GetApiMsgTest {
             connection.setRequestProperty("accept", "*/*");
             connection.setRequestProperty("connection", "Keep-Alive");
             //connection.setRequestProperty("user-agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)");
-            connection.setRequestProperty("content-type","application/json;charset=utf-8");   //设置返回格式
-            connection.setRequestProperty("api-key","4M7DiU07qTEbRPuSz5oKHtQy=Dw=");   //设置api-key
+            connection.setRequestProperty("content-type", "application/json;charset=utf-8");   //设置返回格式
+            connection.setRequestProperty("api-key", "zzNrFTV=f5hC9Zw6LqPChar1TGE=");   //设置api-key
             // 建立实际的连接
             connection.connect();
 
@@ -74,6 +75,19 @@ public class GetApiMsgTest {
                 e2.printStackTrace();
             }
         }
-        return result;
-    }
-}
+        JSONObject jsonData = JSONObject.fromObject(result);
+        System.out.println(jsonData);
+        JSONObject dataJSON = jsonData.getJSONObject("data");
+        System.out.println(dataJSON);
+        String updateAt=dataJSON.getString("update_at");
+        String createTime=dataJSON.getString("create_time");
+        String currentValue=dataJSON.getString("current_value");
+        System.out.println(updateAt);
+        System.out.println(createTime);
+        System.out.println(currentValue);
+
+                return result;
+            }
+
+        }
+

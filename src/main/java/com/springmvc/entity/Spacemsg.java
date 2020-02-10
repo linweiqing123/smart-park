@@ -9,6 +9,26 @@ public class Spacemsg {
 
     private Integer currentValue;
 
+    private int id;
+
+    @Override
+    public String toString() {
+        return "Spacemsg{" +
+                "updateAt=" + updateAt +
+                ", createTime=" + createTime +
+                ", currentValue=" + currentValue +
+                ", id=" + id +
+                '}';
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public Date getUpdateAt() {
         return updateAt;
     }
@@ -32,4 +52,6 @@ public class Spacemsg {
     public void setCurrentValue(Integer currentValue) {
         this.currentValue = currentValue;
     }
+
+
 }

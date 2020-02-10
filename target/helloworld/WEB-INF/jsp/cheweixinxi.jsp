@@ -41,12 +41,12 @@
     <tr align='center' height="22">
         <td width="15%" align="right">创建时间：</td>
         <td width="85%" align="left">
-            ${create_time}</td>
+            ${createTime}</td>
     </tr>
     <tr align='center' height="22">
         <td width="15%" align="right">更新时间：</td>
         <td width="85%" align="left">
-            ${update_at}</td>
+            ${updateAt}</td>
     </tr>
     <%--<tr align='center' height="22">
         <td width="15%" align="right">id：</td>
@@ -54,9 +54,9 @@
             ${id}</td>
     </tr>--%>
     <tr align='center' height="22">
-        <td width="15%" align="right">有无空位：</td>
+        <td width="15%" align="right">有无车辆：</td>
         <td width="85%" align="left">
-            ${current_value}（1为有，0为无）</td>
+            ${currentValue}（1为有，0为无）</td>
     </tr>
    <%-- <tr align='center' height="22">
         <td width="15%" align="right">产生费用：</td>

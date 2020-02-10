@@ -95,7 +95,7 @@
     }
 
     function search() {
-        window.location.href='/SpaceMsg'
+        window.location.href='/GetMsg'
     }
 
    /* function searchcaspace() {

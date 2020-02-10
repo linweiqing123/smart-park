@@ -5,9 +5,9 @@ import com.springmvc.entity.Spacemsg;
 import java.util.List;
 
 public interface SpacemsgMapper {
-    int insert(Spacemsg record);
+   // int insert(Spacemsg record);
 
-    int insertSelective(Spacemsg record);
+    //int insertSelective(Spacemsg record);
 
     List<Spacemsg> find();
 }
