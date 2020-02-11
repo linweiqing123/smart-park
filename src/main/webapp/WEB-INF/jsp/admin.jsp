@@ -76,7 +76,7 @@
                      onclick="search()">
                     <img src="images/logo-three.png">
                     <h2>搜索一下</h2>
-                    <p>搜索停车位和车辆信息</p>
+                    <p>搜索停车位信息</p>
                 </div>
             </form>
 
@@ -94,9 +94,21 @@
         window.location.href='/CarController/CarOut';
     }
 
-    function search() {
+   /* function search() {
         window.location.href='/GetMsg'
+    }*/
+
+    function one() {
+        window.location.href='/GetMsg1'
     }
+
+    function two() {
+        window.location.href='/GetMsg2'
+    }
+
+   function search() {
+       $("#myModalSearch").modal('show');
+   }
 
    /* function searchcaspace() {
         var v = $("#carspacename").val();
@@ -157,41 +169,8 @@
                 <h4 class="modal-title" id="myModalLabel">搜索</h4>
             </div>
             <div class="modal-body">
-                <form class="form-horizontal" id="searchInfo">
-                    <p id="carspaceInfo"></p>
-                    <div class="form-group">
-                        <div class="panel panel-success"
-                             style="display: block; width: 450px; margin-left: 80px">
-                            <div class="panel-heading">
-                                <p id="orderInfo" style="line-height: 25px"></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="carspacename" class="col-sm-3 control-label">车位名</label>
-                        <div class="col-sm-3">
-                            <input type="text" class="form-control" id="carspacename"
-                                   placeholder="输入车位名" name="carspacename"/>
-                        </div>
-                        <span class="col-sm-3" onclick="searchcaspace()"
-                              style="display: block; padding: 0; background: #f40; width: 40px; text-align: center; border-radius: 5px; color: white; margin-top: 5px;">搜索</span>
-                    </div>
-                    <p id="error"></p>
-                    <div class="form-group">
-                        <div class="panel panel-success"
-                             style="width: 450px; margin-left: 80px">
-                            <div class="panel-heading">
-                                <p id="spaceInfo" style="line-height: 25px"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default"
-                                data-dismiss="modal">关闭
-                        </button>
-                    </div>
-                </form>
+                <form class="form-group" onclick="one()" >车位1</form>
+                <form class="form-group" onclick="two()" >车位2</form>
             </div>
 
         </div>

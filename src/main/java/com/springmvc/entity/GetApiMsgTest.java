@@ -1,4 +1,5 @@
 package com.springmvc.entity;
+import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -10,11 +11,10 @@ import java.util.List;
 import java.util.Map;
 
 public class GetApiMsgTest {
-    @RequestMapping("/GetMsg")
-    public static void test(String[] args) {
+    public static void main(String[] args) {
 
         //发送 GET 请求，第一个参数为url，第二个参数为请求参数
-        String s = GetApiMsgTest.sendGet1("http://api.heclouds.com/devices/553157946/datastreams/car_flag", "");
+        String s = GetApiMsgTest.sendGet1("http://api.heclouds.com/devices/553157946/datastreams", "");
         System.out.println(s);
 
     }
@@ -77,14 +77,14 @@ public class GetApiMsgTest {
         }
         JSONObject jsonData = JSONObject.fromObject(result);
         System.out.println(jsonData);
-        JSONObject dataJSON = jsonData.getJSONObject("data");
+        JSONArray dataJSON = jsonData.getJSONArray("data");
         System.out.println(dataJSON);
-        String updateAt=dataJSON.getString("update_at");
+        /*String updateAt=dataJSON.getString("update_at");
         String createTime=dataJSON.getString("create_time");
         String currentValue=dataJSON.getString("current_value");
         System.out.println(updateAt);
         System.out.println(createTime);
-        System.out.println(currentValue);
+        System.out.println(currentValue);*/
 
                 return result;
             }
