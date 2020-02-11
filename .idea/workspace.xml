@@ -8,42 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="aebf7536-de70-4227-be42-11d07d449918" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/SpaceMsgController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/SpaceMsgController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/dao/SpacemsgMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsgTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsgTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/entity/Spacemsg.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/service/SpaceMsgService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/service/impl/SpaceMsgServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/HttpClientUtil1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/HttpClientUtil2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sqlmap/SpacemsgMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/carstationList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/csDetails.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/message.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/today.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/springmvc/controller/SpaceMsgController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springmvc/controller/SpaceMsgController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/springmvc/dao/SpacemsgMapper.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/springmvc/entity/GetApiMsgTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springmvc/entity/GetApiMsgTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/springmvc/entity/Spacemsg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/springmvc/service/SpaceMsgService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/springmvc/service/impl/SpaceMsgServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sqlmap/SpacemsgMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/HttpClientUtil1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/HttpClientUtil2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/helloworld/WEB-INF/classes/com/springmvc/controller/SpaceMsgController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld/WEB-INF/classes/com/springmvc/controller/SpaceMsgController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/helloworld/WEB-INF/classes/com/springmvc/dao/SpacemsgMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/helloworld/WEB-INF/classes/com/springmvc/entity/Spacemsg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/helloworld/WEB-INF/classes/com/springmvc/service/SpaceMsgService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/helloworld/WEB-INF/classes/com/springmvc/service/impl/SpaceMsgServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/helloworld/WEB-INF/classes/sqlmap/SpacemsgMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/helloworld/WEB-INF/classes/util/HttpClientUtil1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/helloworld/WEB-INF/classes/util/HttpClientUtil2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/helloworld/WEB-INF/jsp/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/helloworld/WEB-INF/jsp/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/helloworld/WEB-INF/jsp/carstationList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/helloworld/WEB-INF/jsp/csDetails.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/helloworld/WEB-INF/jsp/message.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/helloworld/WEB-INF/jsp/today.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,7 +50,7 @@
           <entry key="java" value="1283" />
           <entry key="jsp" value="735" />
           <entry key="properties" value="13" />
-          <entry key="txt" value="78" />
+          <entry key="txt" value="92" />
           <entry key="xml" value="61" />
         </counts>
       </usages-collector>
@@ -92,7 +60,7 @@
           <entry key="HTML" value="1" />
           <entry key="JAVA" value="1283" />
           <entry key="JSP" value="733" />
-          <entry key="PLAIN_TEXT" value="83" />
+          <entry key="PLAIN_TEXT" value="97" />
           <entry key="Properties" value="13" />
           <entry key="SQL" value="2" />
           <entry key="XML" value="59" />
@@ -143,8 +111,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/SpaceMsgController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1584">
-              <caret line="106" column="37" lean-forward="true" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
+            <state relative-caret-position="-1746">
+              <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,18 +129,6 @@
                 <element signature="e#3160#4720#0#HTML" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsgTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="738">
-              <caret line="86" column="43" lean-forward="true" selection-start-line="86" selection-start-column="43" selection-end-line="86" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -479,7 +435,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581410320438" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581410385884" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/springmvc/entity" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -514,11 +470,11 @@
   </component>
   <component name="RunManager" selected="Tomcat Server.smart_park">
     <configuration name="GetApiMsgTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.springmvc.entity.GetApiMsgTest" />
+      <option name="MAIN_CLASS_NAME" value="util.GetApiMsgTest" />
       <module name="smart-park" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.springmvc.entity.*" />
+          <option name="PATTERN" value="util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -721,7 +677,7 @@
       <workItem from="1581227431089" duration="268000" />
       <workItem from="1581247809352" duration="703000" />
       <workItem from="1581306523633" duration="20485000" />
-      <workItem from="1581398023331" duration="7078000" />
+      <workItem from="1581398023331" duration="7349000" />
     </task>
     <task id="LOCAL-00001" summary="登录跳转主页面">
       <created>1578151799045</created>
@@ -800,7 +756,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581340618893</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="已完成">
+      <created>1581410374074</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1581410374074</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -836,7 +799,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184625000" />
+    <option name="totallyTimeSpent" value="184896000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -941,7 +904,8 @@
     <MESSAGE value="页面" />
     <MESSAGE value="车位信息（未完成）" />
     <MESSAGE value="车位信息（可显示，未完成）" />
-    <option name="LAST_COMMIT_MESSAGE" value="车位信息（可显示，未完成）" />
+    <MESSAGE value="已完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="已完成" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1267,7 +1231,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/entity/GetApiMsgTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
+        <state relative-caret-position="1548">
           <caret line="86" column="43" lean-forward="true" selection-start-line="86" selection-start-column="43" selection-end-line="86" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1289,8 +1253,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/SpaceMsgController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="106" column="37" lean-forward="true" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
+        <state relative-caret-position="-1746">
+          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,7 +1,4 @@
-package com.springmvc.entity;
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
-import org.springframework.web.bind.annotation.RequestMapping;
+package util;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -75,19 +72,19 @@ public class GetApiMsgTest {
                 e2.printStackTrace();
             }
         }
-        JSONObject jsonData = JSONObject.fromObject(result);
+        /*JSONObject jsonData = JSONObject.fromObject(result);
         System.out.println(jsonData);
         JSONArray dataJSON = jsonData.getJSONArray("data");
         System.out.println(dataJSON);
-        /*String updateAt=dataJSON.getString("update_at");
+        String updateAt=dataJSON.getString("update_at");
         String createTime=dataJSON.getString("create_time");
         String currentValue=dataJSON.getString("current_value");
         System.out.println(updateAt);
         System.out.println(createTime);
         System.out.println(currentValue);*/
 
-                return result;
-            }
+        return result;
+    }
 
-        }
+}
 
