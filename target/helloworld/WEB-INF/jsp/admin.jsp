@@ -37,7 +37,7 @@
     <div class="row">
         <div class="col-md-12 column">
             <div class="welcome">
-                <h2><%--${USER_LOGIN.name},--%>欢迎您使用停车场收费系统!</h2>
+                <h2>欢迎您使用停车场收费系统!</h2>
                 <p> 拥有车库：1个&emsp;&emsp;&emsp;拥有车位：8个</p>
             </div>
         </div>
@@ -94,10 +94,6 @@
         window.location.href='/CarController/CarOut';
     }
 
-   /* function search() {
-        window.location.href='/GetMsg'
-    }*/
-
     function one() {
         window.location.href='/GetMsg1'
     }
@@ -109,50 +105,6 @@
    function search() {
        $("#myModalSearch").modal('show');
    }
-
-   /* function searchcaspace() {
-        var v = $("#carspacename").val();
-        if (v == "" || v == " " || v == null) {
-            $("#error").html("<p style='color:red;margin-left:150px'>车位名不能为空</p>");
-            return;
-        } else {
-            $("#error").html("<p id='error'></p>")
-        }
-        $.ajax({
-            async: false,
-            url: "http://api.heclouds.com/devices/553149658/datastreams/car_flag",
-            data: {
-                /!*"carspacename": $("#carspacename").val()*!/
-            },
-            type: "GET",
-            dataType: 'jsonp',  // 请求方式为jsonp
-            jsonpCallback: "onBack",
-            success: function (data) {
-                if (errno==0) {
-                    var state;
-                    if (data.current_value == 1) {
-                        state = "有车";
-                    } else {
-                        state = "无车";
-                    }
-                    var la = "<p>创建时间：" + data.create_time
-                        + "<br>" + "更新时间：" + data.update_at
-                        + "&emsp;&emsp;" + "<br>"
-                        + "id：" + data.id
-                        + "有无空位：" + data.current_value + "<br>"  + "</p>";
-                    $("#spaceInfo").html(la);
-                } else {
-                    $("#spaceInfo").html("<p style='color:red'>没有查询到该车位</p>");
-                }
-            },
-            fail: function (e) {
-                alert("fail");
-            },
-            error: function (e) {
-                alert("error");
-            }
-        })
-    }*/
 
 </script>
 

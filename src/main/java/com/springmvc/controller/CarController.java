@@ -74,7 +74,7 @@ public class CarController {
             list = carService.findAll();
         }
         String jsonStr = JSONUtils.writeValueAsString(list);
-        HTMLUtils.writeJosn(response, jsonStr);
+        HTMLUtils.writeJson(response, jsonStr);
     }
 
     // 根据停车时间进行车辆计费
@@ -160,7 +160,7 @@ public class CarController {
 
         request.getSession().setAttribute("list", list);
         String jsonStr = JSONUtils.writeValueAsString(list);
-        HTMLUtils.writeJosn(response, jsonStr);
+        HTMLUtils.writeJson(response, jsonStr);
     }
 
     // 删除车辆信息
@@ -170,7 +170,7 @@ public class CarController {
         carService.del(id);
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("success", "成功");
-        HTMLUtils.writeJosn(response, jsonObject.toString());
+        HTMLUtils.writeJson(response, jsonObject.toString());
     }
 
 }

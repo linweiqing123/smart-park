@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class HTMLUtils {
 
-	public static void writeJosn(HttpServletResponse response,String jsonStr){
+	public static void writeJson(HttpServletResponse response,String jsonStr){
 		
 		try {
 			

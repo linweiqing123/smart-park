@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+import util.HTMLUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -24,21 +25,22 @@ public class LoginController {
     }
 
     @RequestMapping("/admin")
-    public String admin(User user, HttpServletRequest request, HttpServletResponse response){
+    public ModelAndView admin(User user){
         ModelAndView mv=new ModelAndView();
         JSONObject json =new JSONObject();
         User user1=loginService.findUser(user);
         if(user1!=null){
             mv.setViewName("admin");//跳转到指定的页面
-            json.put("success","成功");
-            request.getSession().setAttribute("username",user.getUsername());
+           // mv.addObject("msg","成功");
+           // request.getSession().setAttribute("username",user.getUsername());
         }else{
             mv.setViewName("login");
-            json.put("errorMsg","用户名或密码错误");
-        }
-        //HTMLUtils.writeJosn(response,json.toString());
-        return "admin";
+            mv.addObject("msg","用户名或密码错误");
     }
+        //HTMLUtils.writeJson(response,json.toString());
+        return mv;
+    }
+
     @RequestMapping("/logout")
     public String logout(){
         return "login";

@@ -27,12 +27,12 @@ public class SpaceMsgController {
         request.getSession().setAttribute("list", list);
         String jsonStr = JSONUtils.writeValueAsString(list);
         HTMLUtils.writeJosn(response, jsonStr);
-       *//* ModelAndView mv=new ModelAndView();
+        ModelAndView mv=new ModelAndView();
         mv.addObject("updateAt",updateAt);
         mv.addObject("createTime",createTime);
         mv.addObject("currentValue",currentValue);
         mv.setViewName("cheweixinxi");
-        return mv;*//*
+        return mv;
     }
 */
     @RequestMapping("/GetMsg1")
