@@ -59,9 +59,9 @@
                       action="${pageContext.request.contextPath }/admin"
                       method="post" id="myform">
                     <div style="margin-left: 80px">
-                        <font color="red"> <span id="message">${msg}</span>
-                        </font>
-                    </div>
+                    <font color="red"> <span id="message">${msg}</span>
+                    </font>
+                </div>
                     <div class="form-group">
                         <label for="username" class="col-sm-2 control-label">用户名:</label>
                         <div class="col-sm-6">

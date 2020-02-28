@@ -20,7 +20,7 @@
         <div class="container">
             <div class="navbar-header"
                  style="margin-top: 8px; margin-right: 30px">
-                <a href="<%=basePath%>admin"><img
+                <a href="<%=basePath%>First"><img
                         style="height: 55px; width: 55px" title="点击跳转"
                         src="images/logo-max.png"></a>
             </div>
@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse"
                  id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav" style="padding: 10px">
-                    <li><a href="<%=basePath%>admin">首页</a></li>
+                    <li><a href="<%=basePath%>First">首页</a></li>
                     <li><a href="<%=basePath%>CarController/Record">停车记录</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right" style="padding: 6px">

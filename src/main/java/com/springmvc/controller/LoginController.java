@@ -24,10 +24,15 @@ public class LoginController {
         return "login";
     }
 
+    @RequestMapping("/First")
+    public String First(){
+        return "admin";
+    }
+
     @RequestMapping("/admin")
     public ModelAndView admin(User user){
         ModelAndView mv=new ModelAndView();
-        JSONObject json =new JSONObject();
+        //JSONObject json =new JSONObject();
         User user1=loginService.findUser(user);
         if(user1!=null){
             mv.setViewName("admin");//跳转到指定的页面
